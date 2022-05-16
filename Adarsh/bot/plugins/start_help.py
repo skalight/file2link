@@ -244,7 +244,7 @@ async def about_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🐼 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🐼", url="https://t.me/MWUpdatez")],
+                [InlineKeyboardButton("🐼 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🐼", url="https://t.me/HappyKidBGMZ")],
                 [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞𝐳 🍿", url="https://t.me/bgm_linkzz")]
             ]
         )
