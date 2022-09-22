@@ -60,8 +60,8 @@ async def start(b, m):
             text="**𝙷𝙴𝙻𝙻𝙾...⚡**\n\n**𝙸𝙰𝙼 𝙰 𝚂𝙸𝙼𝙿𝙻𝙴 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙵𝙸𝙻𝙴/𝚅𝙸𝙳𝙴𝙾 𝚃𝙾 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙾𝚁 𝙱𝙾𝚃.**\n\n**𝙸 𝙲𝙰𝙽 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴 𝙳𝙸𝚁𝙴𝙲𝚃 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴𝚂 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙾𝙽𝙻𝙸𝙽𝙴 & 𝙵𝙾𝚁 𝚂𝚃𝚁𝙴𝙰𝙼𝙸𝙽𝙶..\n\n𝚄𝚂𝙴 /help 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴 𝙳𝙴𝚃𝙰𝙸𝙻𝚂...\n\n𝚂𝙴𝙽𝙳 𝙼𝙴 𝙰𝙽𝚈 𝚅𝙸𝙳𝙴𝙾/𝙵𝙸𝙻𝙴 𝚃𝙾 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚉....**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("👾 𝐆𝐈𝐓𝐇𝐔𝐁 👾", url="https://github.com/HappyKidBGMZ"), InlineKeyboardButton("🐼 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🐼", url="https://t.me/last_drug")],
-                    [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 🍿", url="https://t.me/bgm_linkzz"), InlineKeyboardButton("👻 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 👻", url="https://t.me/HappyKidbgmz")],
+                    [InlineKeyboardButton("👾 𝐆𝐈𝐓𝐇𝐔𝐁 👾", url="https://github.com/HappyKidBGMZ"), InlineKeyboardButton("🐼 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🐼", url="https://t.me/+AaJO1Ej6T441YjQ1")],
+                    [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 🍿", url="https://t.me/ms_new_movies_collection"), InlineKeyboardButton("👻 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 👻", url="https://t.me/+AaJO1Ej6T441YjQ1")],
                     [InlineKeyboardButton("💌 𝐌𝐨𝐫𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💌", url="https://linktr.ee/HappyKidBGMZ")]
                 ]
             ),
@@ -178,8 +178,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👾 𝐆𝐈𝐓𝐇𝐔𝐁 👾", url="https://github.com/HappyKidBGMZ"), InlineKeyboardButton("🐼 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🐼", url="https://t.me/last_drugz")],
-                [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍿", url="https://t.me/bgm_linkzz"), InlineKeyboardButton("👻 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 👻", url="https://t.me/HappyKidbgmz")],
+                [InlineKeyboardButton("👾 𝐆𝐈𝐓𝐇𝐔𝐁 👾", url="https://github.com/HappyKidBGMZ"), InlineKeyboardButton("🐼 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🐼", url="https://t.me/+AaJO1Ej6T441YjQ1")],
+                [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍿", url="https://t.me/ms_new_movies_collection"), InlineKeyboardButton("👻 𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐳 👻", url="https://t.me/+AaJO1Ej6T441YjQ1")],
                 [InlineKeyboardButton("💌 𝐌𝐨𝐫𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 💌", url="https://linktr.ee/HappyKidBGMZ")]
             ]
         )
@@ -231,21 +231,21 @@ async def about_handler(bot, message):
 <b>╭━━━━━━━〔𝐅𝐈𝐋𝐄-𝐓𝐎-𝐋𝐈𝐍𝐊 𝐁𝐎𝐓〕</b>
 ┃
 ┣⪼<b>𝐁𝐎𝐓-𝐍𝐀𝐌𝐄 : <a href='https://linktr.ee/HappyKidBGMZ'>𝐅𝐢𝐥𝐞-𝐓𝐨-𝐋𝐢𝐧𝐤</a></b>
-┣⪼<b>𝐔𝐩𝐝𝐚𝐭𝐞𝐳 : <a href='https://t.me/HappyKidBGMZ'>𝐁𝐎𝐓-𝐔𝐩𝐝𝐚𝐭𝐞𝐳</a></b>
-┣⪼<b>𝐒𝐮𝐩𝐩𝐨𝐫𝐭 : <a href='https://t.me/BGM_LINKZZ'>𝐁𝐆𝐌_𝐋𝐢𝐧𝐤𝐳𝐙</a></b>
+┣⪼<b>𝐔𝐩𝐝𝐚𝐭𝐞𝐳 : <a href='https://t.me/+AaJO1Ej6T441YjQ1'>𝐁𝐎𝐓-𝐔𝐩𝐝𝐚𝐭𝐞𝐳</a></b>
+┣⪼<b>𝐒𝐮𝐩𝐩𝐨𝐫𝐭 : <a href='https://t.me/ms_new_movies_collection'>MS_Linkzzz</a></b>
 ┣⪼<b>𝐒𝐞𝐫𝐯𝐞𝐫 : 𝙷𝙴𝚁𝚄𝙺𝙾</b>
 ┣⪼<b>𝐋𝐢𝐛𝐫𝐚𝐫𝐲 : 𝙿𝚁𝙾𝙶𝚁𝙰𝙼</b>
 ┣⪼<b>𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 : 𝙿𝚈𝚃𝙷𝙾𝙽 3</b>
 ┣⪼<b>𝐒𝐎𝐔𝐑𝐂𝐄-𝐂𝐎𝐃𝐄 : <a href='https://linktr.ee/SK_Source_Code'>𝐀𝐥𝐥-𝐒𝐨𝐮𝐫𝐜𝐞-𝐂𝐨𝐝𝐞-𝐋𝐢𝐧𝐤𝐳</a></b>
-┣⪼<b>𝐌𝐨𝐫𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 : <a href='https://linktr.ee/HappyKidBGMZ'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a></b>
+┣⪼<b>𝐌𝐨𝐫𝐞 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 : <a href='https://t.me/+AaJO1Ej6T441YjQ1'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a></b>
 ┃
 <b>╰━━━━━━━〔𝙿𝙻𝙴𝙰𝚂𝙴 𝚂𝚄𝙿𝙿𝙾𝚁𝚃〕</b>""",
   parse_mode="html",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🐼 𝐁𝐨𝐭𝐳 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🐼", url="https://t.me/HappyKidBGMZ")],
-                [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞𝐳 𝐔𝐩𝐝𝐚𝐭𝐞𝐳🍿", url="https://t.me/bgm_linkzz")]
+                [InlineKeyboardButton("🐼 𝐁𝐨𝐭𝐳 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 🐼", url="https://t.me/+AaJO1Ej6T441YjQ1")],
+                [InlineKeyboardButton("🍿 𝐌𝐨𝐯𝐢𝐞𝐳 𝐔𝐩𝐝𝐚𝐭𝐞𝐳🍿", url="https://t.me/ms_new_movies_collection")]
             ]
         )
     )
