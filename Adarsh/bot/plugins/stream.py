@@ -157,7 +157,7 @@ async def channel_receive_handler(bot, broadcast):
         )
         await bot.edit_message_reply_markup(
             chat_id=broadcast.chat.id,
-            title = file.file_name
+            title = file.file_name,
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
