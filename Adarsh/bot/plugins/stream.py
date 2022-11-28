@@ -157,8 +157,7 @@ async def channel_receive_handler(bot, broadcast):
         )
         await bot.edit_message_reply_markup(
             chat_id=broadcast.chat.id,
-            message_id=broadcast.message_id,
-            ➠Fast Download Link :,
+            message_id=broadcast.message_id ➠Fast Download Link :,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=stream_link),
