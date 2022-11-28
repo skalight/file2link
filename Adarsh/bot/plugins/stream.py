@@ -155,10 +155,10 @@ async def channel_receive_handler(bot, broadcast):
             quote=True,
             parse_mode="Markdown"
         )
-        await bot.edit_message_reply_markup(
+        await bot.edit_message_reply_write(
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
-            reply_markup="""
+            reply_write="""
 <b>𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 𝙸𝚂 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳...⚡
 <b>📧 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 :- </b> <i><b>{}</b></i>
 <b>📦 𝙵𝙸𝙻𝙴 𝚂𝙸𝚉𝙴 :- </b> <i><b>{}</b></i>
