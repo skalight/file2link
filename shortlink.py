@@ -3,7 +3,7 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    online_link = f'https://shorturllink.in/api'
+    Url = f'https://shorturllink.in/api'
     params = {'api': e0867ce24e2238645541bf7651be2217b4cd5dd1,
               'online_link': link,
               }
