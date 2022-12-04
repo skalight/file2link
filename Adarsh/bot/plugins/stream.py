@@ -164,7 +164,7 @@ async def editing(bot, broadcast):
         if caption_position == "bottom":
              await bot.edit_message_caption(
                  chat_id = broadcast.chat.id,
-                 caption = file_caption + "\n" + caption_text,
+                 caption = caption_text,
                  parse_mode = "markdown"
         )
     except FloodWait as w:
