@@ -19,6 +19,11 @@ MY_PASS = os.environ.get("MY_PASS",None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
+#file fast download
+caption_position = usercaption_position.lower()
+caption_text = """<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>
+<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>"""
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
 async def login_handler(c: Client, m: Message):
@@ -155,15 +160,12 @@ async def channel_receive_handler(bot, broadcast):
             quote=True,
             parse_mode="Markdown"
         )
-        await bot.edit_message_reply_markup(
-            chat_id=broadcast.chat.id,
-            title = file.file_name,
-            message_id=broadcast.message_id,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("⚡ 𝚆𝙰𝚃𝙲𝙷 ⚡", url=stream_link),
-                     InlineKeyboardButton('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_link)] 
-                ]
+        elif caption_position == "bottom":
+             await bot.edit_message_caption(
+                 chat_id = message.chat.id, 
+                 message_id = message.message_id,
+                 caption = file_caption + "\n" + caption_text,
+                 parse_mode = "markdown"
             )
         )
     except FloodWait as w:
