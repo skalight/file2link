@@ -166,7 +166,6 @@ async def channel_receive_handler(bot, broadcast):
                  message_id = message.message_id,
                  caption = file_caption + "\n" + caption_text,
                  parse_mode = "markdown"
-            )
         )
     except FloodWait as w:
         print(f"Sleeping for {str(w.x)}s")
