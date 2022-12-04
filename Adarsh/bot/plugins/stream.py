@@ -162,8 +162,9 @@ async def channel_receive_handler(bot, broadcast):
         await bot.edit_message_caption(
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
-            caption="""<b>💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- </b> <i><b>{}</b></i></b>""",
-            parse_mode='HTML'
+            caption="""<i><b>{}</b></i>/n/n<b>➠Fast Download Link :</b>/n<i><b>{}</b></i></b>""",
+            text=msg_text.format(get_name(log_msg), online_link),
+            parse_mode="HTML"
             )
         
     except FloodWait as w:
