@@ -3,9 +3,9 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    Url = f'https://shorturllink.in/api'
-    params = {'api': e0867ce24e2238645541bf7651be2217b4cd5dd1,
-              'online_link': link,
+    url = f'https://shorturllink.in/api'
+    params = {'api': SHORTENER_API,
+              'url': link,
               }
 
     try:
@@ -16,9 +16,9 @@ async def get_shortlink(link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://shorturllink.in/api?api=e0867ce24e2238645541bf7651be2217b4cd5dd1&link={link}'
+                    return f'https://shorturllink.in/api?api={SHORTENER_API}&link={link}'
 
 
     except Exception as e:
         logger.error(e)
-        return f'https://shorturllink.in/api?api=e0867ce24e2238645541bf7651be2217b4cd5dd1&link={link}'
+        return f'https://shorturllink.in/api?api={SHORTENER_API}&link={link}'
