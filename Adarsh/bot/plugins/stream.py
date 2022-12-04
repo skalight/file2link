@@ -160,7 +160,7 @@ async def channel_receive_handler(bot, broadcast):
             quote=True,
             parse_mode="Markdown"
         )
-        elif caption_position == "bottom":
+        if caption_position == "bottom":
              await bot.edit_message_caption(
                  chat_id = message.chat.id, 
                  message_id = message.message_id,
