@@ -20,6 +20,7 @@ pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
 #file fast download
+usercaption_position = Config.CAPTION_POSITION
 caption_position = usercaption_position.lower()
 caption_text = """<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
