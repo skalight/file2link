@@ -163,7 +163,7 @@ async def channel_receive_handler(bot, broadcast):
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
             caption="""<i><b>{}</b></i>/n/n<b>➠Fast Download Link :</b>/n<i><b>{}</b></i></b>""",
-            text=msg_text.format(get_name(log_msg), online_link),
+            text=caption.format(get_name(log_msg), online_link),
             parse_mode="HTML"
             )
         
