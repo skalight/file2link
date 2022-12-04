@@ -163,7 +163,7 @@ async def channel_receive_handler(bot, broadcast):
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
             caption="""<b>💌 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙻𝙸𝙽𝙺 :- </b> <i><b>{}</b></i></b>""",
-            parse_mode = "markdown"
+            parse_mode='HTML'
             )
         
     except FloodWait as w:
