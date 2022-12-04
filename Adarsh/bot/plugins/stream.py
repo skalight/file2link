@@ -22,9 +22,8 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 #file fast download
 usercaption_position = Var.CAPTION_POSITION
 caption_position = usercaption_position.lower()
-caption_text = """<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>
-<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>
-<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>"""
+caption_text = """➠Fast Download Link :
+url=online_link"""
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
 async def login_handler(c: Client, m: Message):
