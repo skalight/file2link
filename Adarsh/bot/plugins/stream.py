@@ -22,7 +22,7 @@ pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 #file fast download
 usercaption_position = Var.CAPTION_POSITION
 caption_position = usercaption_position.lower()
-caption_text = """('⚡ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ⚡', url=online_link)]])"""
+caption_text = """<i><b>{}</b></i>/n/n<b>➠Fast Download Link :</b>/n<i><b>{}</b></i></b>"""
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) & ~filters.edited, group=4)
 async def login_handler(c: Client, m: Message):
@@ -162,9 +162,10 @@ async def channel_receive_handler(bot, broadcast):
         await bot.edit_message_caption(
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
-            caption="""<i><b>{}</b></i>/n/n<b>➠Fast Download Link :</b>/n<i><b>{}</b></i></b>""",
-            text=caption.format(get_name(log_msg), online_link),
-            parse_mode="HTML"
+            caption=caption_text.format(get_name(log_msg), online_link),
+            parse_mode="HTML", 
+            quote=True,
+            disable_web_page_preview=True
             )
         
     except FloodWait as w:
