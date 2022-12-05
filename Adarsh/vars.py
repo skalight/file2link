@@ -22,8 +22,8 @@ class Var(object):
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5291606032").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
-    SHORTENER_API = environ.get('SHORTENER_API', '4fbe384f585aa6c0df736bd9a859bfc3b9216fee')
-    SHORTENER_WEBSITE = environ.get('SHORTENER_WEBSITE', 'tnlink.in')
+    SHORTENER_API = str(getenv('SHORTENER_API', '4fbe384f585aa6c0df736bd9a859bfc3b9216fee'))
+    SHORTENER_WEBSITE = str(getenv('SHORTENER_WEBSITE', 'tnlink.in'))
 
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
