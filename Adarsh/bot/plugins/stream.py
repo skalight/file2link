@@ -163,7 +163,7 @@ async def channel_receive_handler(bot, broadcast):
         await bot.edit_message_caption(
             chat_id=broadcast.chat.id,
             message_id=broadcast.message_id,
-            caption=caption_text.format(get_name(log_msg), online_link),
+            caption=caption_text.format(get_name(log_msg), url),
             parse_mode="HTML"
             )
         
