@@ -1,4 +1,6 @@
 import os
+import asyncio
+from asyncio import TimeoutError
 from shortzy import Shortzy
 from Adarsh.vars import Var
 
