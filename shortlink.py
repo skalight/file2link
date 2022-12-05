@@ -1,3 +1,4 @@
+import os
 from shortzy import Shortzy
 from Adarsh.vars import Var
 
