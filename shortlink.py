@@ -1,24 +1,21 @@
+from shortzy import Shortzy
+
+shortzy = Shortzy(SHORTENER_API, SHORTENER_WEBSITE)
+
 async def get_shortlink(link):
-    https = link.split(":")[0]
-    if "http" == https:
-        https = "https"
-        link = link.replace("http", https)
-    url = f'https://shorturllink.in/api'
-    params = {'api': SHORTENER_API,
-              'url': link,
-              }
+    if not SHORTENER_API or not SHORTENER_WEBSITE:
+        return link
 
     try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-                data = await response.json()
-                if data["status"] == "success":
-                    return data['shortenedUrl']
-                else:
-                    logger.error(f"Error: {data['message']}")
-                    return f'https://shorturllink.in/api?api={SHORTENER_API}&link={link}'
+        x = await shortzy.convert(link, silently_fail=True)
+    except Exception:
+        x = await get_shortlink_sub(link)
+    return x
 
 
-    except Exception as e:
-        logger.error(e)
-        return f'https://shorturllink.in/api?api={SHORTENER_API}&link={link}'
+async def get_shortlink_sub(link):
+    url = f'https://{SHORTENER_WEBSITE}/api'
+    params = {'api': SHORTENER_API, 'url': link}
+    scraper = cloudscraper.create_scraper() 
+    r = scraper.get(url, params=params)
+    return r.json()["shortenedUrl"]
