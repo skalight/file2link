@@ -1,4 +1,5 @@
 from shortzy import Shortzy
+from Adarsh.vars import Var
 
 shortzy = Shortzy(SHORTENER_API, SHORTENER_WEBSITE)
 
