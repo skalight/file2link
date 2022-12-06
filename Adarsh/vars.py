@@ -18,9 +18,10 @@ class Var(object):
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001720440096'))
     PORT = int(getenv('PORT', 8080))
     CAPTION_POSITION = os.environ.get("CAPTION_POSITION", "BOTTOM")
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '15.207.143.189'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "5291606032").split())  
+    ENV = bool(getenv('ENV', True))
     NO_PORT = bool(getenv('NO_PORT', False))
     SHORTENER_API = str(getenv('SHORTENER_API', '4fbe384f585aa6c0df736bd9a859bfc3b9216fee'))
     SHORTENER_WEBSITE = str(getenv('SHORTENER_WEBSITE', 'tnlink.in'))
